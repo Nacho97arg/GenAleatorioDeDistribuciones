@@ -10,6 +10,7 @@ dist_pascal = []
 dist_binomial = []
 dist_hiper_geometrica = []
 dist_poisson = []
+dist_markov = []
 
 fn.Uniforme(0, 1, dist_uniforme)
 fn.Exponencial(0.12, dist_exponencial)
@@ -19,6 +20,7 @@ fn.Pascal(4, 0.01, dist_pascal)
 fn.Binomial(100, 0.5, dist_binomial)
 fn.HiperGeometrica(500, 100, 0.40, dist_hiper_geometrica)
 fn.Poisson(1, dist_poisson)
+fn.Markov(5, 100, 0, dist_markov)
 
 grf.Graficas.grafHist = classmethod(grf.Graficas.grafHist)
 

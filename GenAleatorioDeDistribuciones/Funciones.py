@@ -78,8 +78,9 @@ def Poisson (p, x):
 
 ###Esto todavia no esta testeado
 
-def Markov(p, m, n, i, x):
+def Markov(m, n, i, x):
     r = gn.ranGen().randGCL(15, n)
+    p = [[0.05, 0.25, 0.75, 0.95, 1],[0.2, 0.4, 0.6, 0.8, 1],[0.3, 0.4, 0.5, 0.75, 1],[0.05, 0.1, 0.15, 0,95, 1],[0.1, 0.2, 0.3, 0.4, 1]]
     for k in range(0, m):
         x.append(0)
     for l in range(0, n):
