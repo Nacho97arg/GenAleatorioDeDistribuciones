@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>87db5bf6-59b2-4b31-89bd-765b35c410dd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GenAleatorioDeDistribuciones.py</StartupFile>
+    <StartupFile>Main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,7 +25,13 @@
     <Compile Include="Distribuciones\Uniforme.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Funciones.py" />
     <Compile Include="GenAleatorioDeDistribuciones.py" />
+    <Compile Include="Generador.py" />
+    <Compile Include="Graficas.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|CondaEnv2" />

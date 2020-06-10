@@ -3,19 +3,19 @@ import Generador as gn
 import math as mt
 
 def Uniforme (a, b, x):
-    nros = gn.ranGen().randGCL(15, 100)
+    nros = gn.ranGen().randGCL(15, 10000)
     for r in nros:
         x.append(a + (b - a) * r)
     
 
 def Exponencial(ex, x):
-    nros = gn.ranGen().randGCL(15, 100)
+    nros = gn.ranGen().randGCL(15, 10000)
     for r in nros:
         x.append((-ex) * np.log(r))
     
 
 def Gamma(k, a, x):
-    for i in range(0, 100):    
+    for i in range(0, 10000):    
         tr = 1.0
         r = gn.ranGen().randGCL(15 + i, k)
         for j in range(0, k):
@@ -24,7 +24,7 @@ def Gamma(k, a, x):
     
 
 def Normal(ex, stdx, x):
-    for i in range(0, 100):
+    for i in range(0, 10000):
         sum = 0
         r = gn.ranGen().randGCL(15 + i, 12)
         for j in range(0, 12):
@@ -44,7 +44,7 @@ def Pascal (k, q, x):
     
 
 def Binomial(n, p, x):
-    for i in range(0, 100):
+    for i in range(0, 10000):
         cont = 0
         r = gn.ranGen().randGCL(15 + i, n)
         for j in range(0, n):
@@ -70,7 +70,7 @@ def HiperGeometrica (tn, ns, p, x):
     
 
 def Poisson (p, x):
-    for i in range(0, 100):
+    for i in range(0, 1000):
         cont = 0
         b = mt.exp(-p)
         tr = 1
